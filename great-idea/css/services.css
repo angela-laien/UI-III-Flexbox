@@ -66,23 +66,27 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .frame {
-	padding: 30px;
+	margin: 0 70px;
 }
 
 /* Headings */
-h1 p {
-	font-size: 80px;
-	text-align: center;
-	padding-right: 100px;
+h1 {
+	font-size: 30px;
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 20px;
 }
 
 /* Body paragraphs*/
 p {
 	font-size: 15px;
+}
+
+.first_p {
+	padding-top: 30px;
+	padding-bottom: 40px;
+	border-bottom: 2px solid black;
 }
 
 /* Navigation Styling*/
@@ -94,15 +98,13 @@ nav {
 	height: 70px;
 }
 
-.part1 header nav a {
-	margin: 0 2.5%;
-	border: 1px;
-	padding: 20px;
+nav a {	
 	color: grey;
 	text-decoration: none;
-  }
+}
 
-.part2 a {
+.middle a {
+  background: white;
   border: 1px solid black;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -112,70 +114,128 @@ nav {
   text-decoration: none;
 }
 
-
-.container{
-	margin-top: 50px;
-	padding-left: 65px;
 }
-/* Page Structure*/
+/* Page Structure */
+
+.middle {
+	display: flex;
+	flex-direction: column;
+}
+
+.line1 {
+	display: flex;	
+}
+
+.line2 {
+	display: flex;
+}
+
+.line3 {
+	display: flex;
+}
 
 section {
-	padding: 4%;
-	margin-top: 2%;
-	margin-bottom: 2%;
-}
-.part1 {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	padding-bottom: 100px;
+	padding: 20px;
+	border: 1px solid black;
 }
 
-.part2 {
-	display: flex;
-	justify-content: center;
-	padding-bottom: 50px;
+.left1 {
+	height: 250px;
+	margin-top: 4%;
+	margin-right: 2%;
+	background: lightgray;
 }
 
-.top {
-	  display: flex;
-	  border-top: 1px solid black;
-	  margin: 0 8%;
+.left2 {
+	height: 250px;
+	margin-top: 4%;
+	margin-right: 2%;
+	background: lightgray;
 }
 
-.bottom {
-	display: flex;
-	border-bottom: 1px solid black;
-	margin: 0 8%;
+.left3 {
+	height: 250px;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	margin-right: 2%;
+	background: lightgray;
+}
+
+.right1 {
+	height: 250px;
+	margin-top: 4%;
+	margin-left: 2%;
+	background: lightgray;
+} 
+
+.right2 {
+	height: 250px;
+	margin-top: 4%;
+	margin-left: 2%;
+	background: lightgray;
+} 
+
+.right3 {
+	height: 250px;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	margin-left: 2%;
+	background: lightgray;
+} 
+
+.space1 {
+	padding-bottom: 30px;
+}
+
+.space2 {
+	padding-bottom: 30px;
+}
+
+.space3 {
+	padding-bottom: 30px;
+}
+
+.space4 {
+	padding-bottom: 30px;
+}
+.space5 {
+	padding-bottom: 30px;
+}
+
+.space6 {
+	padding-bottom: 30px;
 }
 
 /*Image Formatting*/
-.logo {
-	padding-left: 3%;
-}
-
-.rectangle {
-	text-align: center;
-}
-
-.circle {
-	text-align: right;
+header img {
+	width: 100%;
 }
 /*Footer Section*/
-footer {
-	margin: 0 8%;
+.bottom {
+	display: flex;
+	margin-top: 4%;
+	padding-top: 50px;
+	border-top: 2px solid black;
+}
+
+.b1 {
+	margin-right: 4%;
+}
+
+ul {
+	margin-left: 20px;
+}
+
+li {
+	padding: 10px;
+}
+
+.b2 {
+	margin-left: 4%;
 }
 .copyright {
 	padding: 20px 0;
 	text-align: center;
+	margin-top: 80px;
 	margin-bottom: 80px;
-}
-
-.pe {
-	margin-top: 20px;
-}
-
-#contact {
-	margin-bottom: 5px;
 }
